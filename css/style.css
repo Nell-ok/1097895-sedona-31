@@ -28,7 +28,40 @@
   color: var(--basic-black);
   text-transform: uppercase;
   text-align: center;
+  background-color: var(--special-gray);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+.center {
+  width: 1200px;
+  margin: 0 auto;
   background-color: var(--basic-white);
+}
+.page {
+  height: 100%;
+}
+.main-header {
+  display: grid;
+}
+.main-header-logo {
+  order: 1;
+  justify-self: center;
+}
+.main-navigation {
+  display: grid;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .site-navigation a {
   text-decoration: none;
@@ -43,12 +76,11 @@
 .site-navigation a:focus {
   opacity: 0.3;
 }
-.site-navigation {
-  list-style: none;
+.main-content {
+  display: grid;
 }
-.main-navigation {
-  line-height: 26px;
-  font-weight: bold;
+.picture {
+  margin-bottom: 51px;
 }
 .picture h3 {
   font-weight: bold;
@@ -58,19 +90,28 @@
 .picture p {
   line-height: 26px;
   color: var(--basic-dark);
+  margin: 0 10px;
 }
 .picture img {
   max-width: 100%;
   height: auto;
 }
+.features {
+  margin-bottom: 58px;
+}
 .features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .features-item h3 {
   font-size: 21px;
   font-weight: bold;
 }
 .item-pic {
+  grid-column: 1 / -1;
   color: var(--basic-white);
   background-color: var(--special);
 }
@@ -79,6 +120,9 @@
 }
 .item-last {
   background-color: var(--basic-neutral);
+}
+.item-pic img {
+  display: block;
 }
 .search h2 {
   font-weight: bold;
@@ -155,9 +199,32 @@
   color: rgba(255,255,255,0.3);
   background-color: var(--dark-special);
 }
+.map {
+  background-image: url("../images/map.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1199px;
+  height: 594px;
+}
 .main-footer {
+  padding: 36px 0px;
   background-color: var(--basic-white);
   opacity: 0.9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-contacts {
+  margin: 0;
+  width: 166px;
+  justify-self: center;
+}
+.footer-socials {
+  width: 150px;
+  justify-self: center;
+}
+.footer-copyright {
+  max-width: 220px;
+  justify-self: center;
 }
 .catalog-filters {
   background-image: url("../images/background.jpg");
