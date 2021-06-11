@@ -47,17 +47,17 @@
             <p>Седона — не аттракцион для туристов, там<br>течёт своя жизнь</p>
             <img src="images/background_town.jpg" width="800" height="256" alt="Городок Седона">
           </li>
-          <li class="features-item item-part">
+          <li class="features-item item-part item-img">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
             <img src="images/icon/icon_house.svg" width="75" height="72" alt="Жильё">
           </li>
-          <li class="features-item item-part">
+          <li class="features-item item-part item-img">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
             <img src="images/icon/icon_eat.svg" width="75" height="70" alt="Еда">
           </li>
-          <li class="features-item item-part">
+          <li class="features-item item-part item-img">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного<br>производства!</p>
             <img src="images/icon/icon_gift.svg" width="64" height="77" alt="Сувениры">
@@ -90,35 +90,38 @@
         <p class="search-desc">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="button-search" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <p>
-            <label class="label-desc" for="entrance">Дата заезда:
-             <input class="search-date" id="entrance" name="date" type="text" value="24 апреля 2017">
-             <span class="search-picture"></span>
-            </label>
-          </p>
-          <p>
-            <label class="label-desc" for="exit">Дата выезда:
-             <input class="search-date" id="exit" name="date" type="text" value="4 июля 2017">
-             <span class="search-picture"></span>
-            </label>
-          </p>
-          <p>
-            <label class="label-desc">Взрослые:</label>
-            <button class="button-control" type="button">-</button>
-            <input class="control" type="text" value="2" size="4">
-            <button class="button-control" type="button">+</button>
-          </p>
-          <p>
-            <label class="label-desc">Дети:</label>
-            <button class="button-control" type="button">-</button>
-            <input class="control" type="text" value="0" size="5">
-            <button class="button-control" type="button">+</button>
-          </p>
-          <button class="button-get" type="submit">Найти</button>
+          <div class="search-form-wrapper">
+            <p>
+              <label class="label-desc" for="entrance">Дата заезда:
+               <input class="search-date" id="entrance" name="date" type="text" value="24 апреля 2017">
+               <span class="search-picture"></span>
+              </label>
+            </p>
+            <p>
+              <label class="label-desc" for="exit">Дата выезда:
+               <input class="search-date" id="exit" name="date" type="text" value="4 июля 2017">
+               <span class="search-picture"></span>
+              </label>
+            </p>
+            <p>
+              <label class="label-desc" for="big">Взрослые:</label>
+              <button class="button-control" type="button">-</button>
+              <input class="control" id="big" type="text" value="2" size="4">
+              <button class="button-control" type="button">+</button>
+            </p>
+            <p>
+              <label class="label-desc" for="little">Дети:</label>
+              <button class="button-control" type="button">-</button>
+              <input class="control" id="little" type="text" value="0" size="5">
+              <button class="button-control" type="button">+</button>
+            </p>
+            <button class="button-get" type="submit">Найти</button>
+          </div>
         </form>
       </section>
       <section class="map">
         <h2>Карта</h2>
+        <img src="images/map.jpg" width="1200" height="593" alt="Карта г.Седона">
       </section>
     </main>
     <footer class="main-footer center">
