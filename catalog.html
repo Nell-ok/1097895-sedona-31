@@ -69,15 +69,15 @@
             </fieldset>
             <fieldset class="filter filter-range">
                 <legend>Стоимость в сутки, ₽:</legend>
-                <input type="text" value="от 0">
-                <input type="text" value="до 3000">
-                <input type="range" min="0" max="3000" step="1">
+                <input class="filter-start" type="text" value="от 0">
+                <input class="filter-limit" type="text" value="до 3000">
+                <input class="range" type="range" min="0" max="3000" step="1">
                 <button class="button button-show" type="submit">Показать</button>
             </fieldset>
         </form>
         <section class="catalog-sort">
-          <p>Найдено: 3</p>
-          <p>Сортировка:</p>
+          <p class="catalog-sort-p-all">Найдено: 3</p>
+          <p class="catalog-sort-p">Сортировка:</p>
           <ul class="sort-list">
             <li><a class="active-sort" href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
@@ -94,11 +94,11 @@
                 <li class="item">
                     <img src="images/living/hotel.jpg" width="135" height="90" alt="Amara Resort & Spa">
                     <div class="item-wrapper-one">
-                      <a href="#">
+                      <a class="item-a-title" href="#">
                         <h3 class="title-item">Amara Resort & Spa</h3>
                       </a>
-                      <p>Гостиница</p>
-                      <p>От 4000 ₽</p>
+                      <p class="wrapper-p">Гостиница</p>
+                      <p class="wrapper-p-price">От 4000 ₽</p>
                       <a class="button-item" href="#">Подробнее</a>
                       <a class="button-booking" href="#">Забронировать</a>
                     </div>
@@ -110,27 +110,27 @@
                 <li class="item">
                     <img src="images/living/motel.jpg" width="135" height="90" alt="Desert Quail Inn">
                     <div class="item-wrapper-one">
-                      <a href="#">
+                      <a class="item-a-title" href="#">
                         <h3 class="title-item">Desert Quail Inn</h3>
                       </a>
-                      <p>Мотель</p>
-                      <p>От 3000 ₽</p>
+                      <p class="wrapper-p">Мотель</p>
+                      <p class="wrapper-p-price">От 3000 ₽</p>
                       <a class="button-item" href="#">Подробнее</a>
                       <a class="button-booking" href="#">Забронировать</a>
                     </div>
                     <div class="item-wrapper">
-                      <p><svg></svg></p>
+                      <p></p><svg></svg></p>
                       <p class="item-p">Рейтинг: 8,9</p>
                     </div>
                 </li>
                 <li class="item">
                     <img src="images/living/suite.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                     <div class="item-wrapper-one">
-                      <a href="#">
+                      <a class="item-a-title" href="#">
                         <h3 class="title-item">Villas at Poco Diablo</h3>
                       </a>
-                      <p>Апартаменты</p>
-                      <p>От 2000 ₽</p>
+                      <p class="wrapper-p">Апартаменты</p>
+                      <p class="wrapper-p-price">От 2000 ₽</p>
                       <a class="button-item" href="#">Подробнее</a>
                       <a class="button-booking" href="#">Забронировать</a>
                     </div>
