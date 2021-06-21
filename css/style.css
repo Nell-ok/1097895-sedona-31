@@ -304,23 +304,55 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.search-form-wrapper p,
+.search-form-wrapper .search-form-item,
 .search-form-wrapper .button-get {
   grid-column: 1 / -1;
 }
-.search-form-wrapper p:nth-last-of-type(2) {
+.search-form-wrapper .search-form-item-control {
   grid-column: 1 / 2;
 }
-.search-form-wrapper p:last-of-type {
+.search-form-wrapper .search-form-item-control:last-of-type {
   grid-column: 2 / -1;
 }
-.search-form-wrapper p {
+.search-form-item {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
 }
-.label-desc {
+.search-picture {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  width: 21px;
+  height: 23px;
+  cursor: pointer;
+}
+.search-picture:hover path {
+  fill: var(--basic-black);
+}
+.search-picture:focus path,
+.search-picture:active path {
+  fill: var(--special);
+}
+.search-form-control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.search-form-label {
   font-weight: bold;
   line-height: 26px;
   border: none;
+}
+.search-form-label-last {
+  padding-left: 53px;
 }
 .search-date, .control {
   font-weight: bold;
@@ -342,18 +374,49 @@
   background-color: var(--basic-white);
   border: 2px solid var(--light-gray);
 }
+.search-form-button {
+  position: relative;
+  width: 114px;
+}
 .control {
   text-align: center;
-  padding: 6px 10px;
+  padding: 6px 0;
+  width: 100%;
 }
 .button-control {
-  font-weight: bold;
-  line-height: 26px;
-  text-transform: uppercase;
-  background-color: var(--special-gray);
+  background-color: transparent;
   border: none;
-  padding: 6px 10px;
+  padding: 0;
   cursor: pointer;
+}
+.button-control svg {
+  display: block;
+}
+.button-control-rectangle {
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  width: 12px;
+  height: 3px;
+}
+.button-control-union {
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  width: 11px;
+  height: 11px;
+}
+.button-control:hover path,
+.button-control:hover rect {
+  fill: var(--basic-black);
+}
+.button-control:focus path,
+.button-control:active path {
+  fill: var(--special);
+}
+.button-control-rectangle:focus rect,
+.button-control-rectangle:active rect {
+  fill: var(--special);
 }
 .button-get {
   background-color: var(--special);
