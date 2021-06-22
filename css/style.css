@@ -371,12 +371,20 @@
   border: none;
 }
 .search-date:focus {
+  padding: 4px 8px;
   background-color: var(--basic-white);
   border: 2px solid var(--light-gray);
 }
 .search-form-button {
   position: relative;
   width: 114px;
+}
+.search-form-button input[type=number] {
+  -moz-appearance:textfield;
+}
+.search-form-button input::-webkit-outer-spin-button,
+.search-form-button input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 .control {
   text-align: center;
