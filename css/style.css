@@ -595,6 +595,12 @@
 .filter-input-checkbox:checked + label:disabled::before {
   background-image: url("../images/checkbox-icon/checkbox-on-disabled.svg");
 }
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:active + label::before,
+.filter-checkbox label:focus,
+.filter-checkbox label:active {
+  opacity: 0.3;
+}
 .filter-range legend {
   padding-bottom: 10px;
 }
