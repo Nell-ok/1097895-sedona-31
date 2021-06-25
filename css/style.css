@@ -82,7 +82,10 @@
 }
 .site-navigation {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-columns: repeat(4, 1fr);*/
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  /*добавила gap*/
+  gap: 100px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -118,7 +121,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 51px;
+  /*margin-bottom: 51px;*/
+  margin-bottom: 38px;
 }
 .picture h3 {
   font-weight: bold;
@@ -130,6 +134,8 @@
   line-height: 26px;
   color: var(--basic-dark);
   padding: 0 10px;
+  /*добавила margin-top: 21px;*/
+  margin-top: 21px;
 }
 .picture img {
   max-width: 100%;
@@ -208,6 +214,14 @@
   padding-right: 39px;
   justify-self: end;
 }
+/*Добавила*/
+.item-pic-wrapper-right h3 {
+  padding-top: 52px;
+}
+/*Добавила*/
+.item-pic-wrapper-right .features-item-p {
+  padding-bottom: 49px;
+}
 .item-pic-wrapper {
   position: relative;
 }
@@ -256,11 +270,13 @@
   font-size: 30px;
   line-height: 24px;
   margin: 0;
-  padding: 58px 10px 38px;
+  /*padding: 58px 10px 38px;*/
+  padding: 58px 20px 35px 10px;
 }
 .search-desc {
   margin: 0;
-  padding: 0 10px 38px;
+  /*padding: 0 10px 38px;*/
+  padding: 0 10px 41px;
   line-height: 24px;
   color: var(--basic-dark);
 }
@@ -346,13 +362,18 @@
   justify-content: space-between;
   align-items: baseline;
 }
+/*добавила padding-right*/
+.search-form-control-first {
+  padding-right: 3px;
+}
 .search-form-label {
   font-weight: bold;
   line-height: 26px;
   border: none;
 }
 .search-form-label-last {
-  padding-left: 53px;
+  /*padding-left: 53px;*/
+  padding-left: 51px;
 }
 .search-date, .control {
   font-weight: bold;
@@ -362,9 +383,12 @@
   border: none;
 }
 .search-date {
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;
   padding: 6px 10px;
-  width: 326px;
+  width: 326px;*/
+  margin-bottom: 29px;
+  padding: 6px 11px;
+  width: 324px;
 }
 .search-date:hover {
   background-color: var(--dark-gray);
@@ -437,7 +461,8 @@
   width: 458px;
   padding: 16px 182px;
   justify-self: center;
-  margin-top: 54px;
+  /*margin-top: 54px;*/
+  margin-top: 55px;
   cursor: pointer;
 }
 .button-get:hover {
@@ -484,6 +509,8 @@
   margin:0;
   justify-self: center;
   align-self: end;
+  /*Добавила padding-left*/
+  padding-left: 6px;
 }
 .socials {
   margin: 0;
@@ -491,6 +518,8 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  /*Добавила font-size*/
+  font-size: 28px;
 }
 .socials a {
   padding-right: 6px;
@@ -511,12 +540,17 @@
 }
 .footer-copyright {
   margin: 0;
-  line-height: 26px;
   margin-right: 73px;
   justify-self: center;
   align-self: end;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-copyright-p {
+  margin: 0;
+  margin-right: 15px;
+  line-height: 26px;
+  padding-left: 7px;
 }
 .button:hover path {
   fill: var(--special);
@@ -563,6 +597,10 @@
   cursor: pointer;
   user-select: none;
 }
+/*Добавила padding-left:*/
+.filter-checkbox .filter-checkbox-label {
+  padding-left: 3px;
+}
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -597,8 +635,8 @@
 }
 .filter-input-checkbox:focus + label::before,
 .filter-input-checkbox:active + label::before,
-.filter-checkbox label:focus,
-.filter-checkbox label:active {
+.filter-checkbox:focus label,
+.filter-checkbox:active label {
   opacity: 0.3;
 }
 .filter-range legend {
@@ -691,7 +729,8 @@
 }
 .button-show {
   position: absolute;
-  left: 89px;
+  /*left: 89px;*/
+  left: 83px;
   bottom: 0;
   color: var(--basic-white);
   font-size: 14px;
@@ -735,20 +774,23 @@
 .catalog-sort .catalog-sort-p {
   font-size: 12px;
   line-height: 18px;
-  padding: 0;
-  padding-right: 40px;
+  /*padding: 0;
+  padding-right: 40px;*/
+  padding: 2px 41px 0 0;
 }
 .sort-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
 }
 .sort-list a {
   color: var(--transparent-black);
   font-size: 12px;
   line-height: 18px;
   text-decoration: underline dotted var(--special);
-  padding-right: 32px;
+  /*padding-right: 32px;*/
+  padding-right: 33px;
 }
 .sort-list .active-sort {
   color: var(--special);
@@ -772,7 +814,8 @@
 .sort-control .sort-control-a {
   content: "";
   position: absolute;
-  top: 11px;
+  /*top: 11px;*/
+  top: 7px;
   left: 0;
   width: 11px;
   height: 10px;
@@ -806,7 +849,7 @@
 }
 .item-wrapper-one {
   justify-self: start;
-  padding-left: 29px;
+  padding-left: 30px;
   display: grid;
   grid-template-columns: 1fr 142px;
   grid-template-rows: repeat(2, 1fr) min-content;
@@ -830,9 +873,13 @@
 }
 .item-wrapper-one .wrapper-p {
   grid-column: 1 / 2;
+  /*Добавила line-height:*/
+  line-height: 14px;;
 }
 .item-wrapper-one .wrapper-p-price {
   grid-column: 2 / -1;
+  /*Добавила line-height:*/
+  line-height: 14px;;
 }
 .item img {
   padding: 0;
@@ -846,7 +893,8 @@
   margin: 0;
   text-align: left;
   font-size: 21px;
-  line-height: 26px;
+  /*line-height: 26px;*/
+  line-height: 20px;
 }
 .item-p {
   color: var(--gray);
@@ -868,13 +916,16 @@
   background: url("../images/icon/star.svg") space;
 }
 .rating-good {
-  width: 91px;
+  /*width: 91px;*/
+  width: 88px;
 }
 .rating-middle {
-  width: 67px;
+  /*width: 67px;*/
+  width: 64px;
 }
 .rating-bad {
-  width: 43px;
+  /*width: 43px;*/
+  width: 41px;
 }
 .item a {
   color: var(--basic-black);
