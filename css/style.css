@@ -469,7 +469,7 @@
 }
 .button-get:focus,
 .button-get:active {
-  color: rgba(255,255,255,0.3);
+  color: var(--transparent-white);
   background-color: var(--dark-special);
 }
 .main-footer {
@@ -900,7 +900,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.wraper-rating {
+.wrapper-rating {
   margin: 0;
   padding: 0;
   align-self: flex-end;
